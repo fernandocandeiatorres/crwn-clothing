@@ -1,31 +1,15 @@
-body {
-  width: 100%;
-  min-height: 100vh;
-  padding-top: 10px;
-}
-
-.single-collection {
-  margin: 0 30px;
+.collection-preview {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 30px;
 
-  #collec-title {
-    width: 100%;
-    text-align: center;
+  .title {
+    font-size: 28px;
+    margin-bottom: 25px;
   }
 
-  .collection-item {
-    img {
-      margin: 0;
-      padding: 0;
-      height: 300px;
-      width: 300px;
-    }
-
-    &:nth-of-type(1n + 6) {
-      display: none;
-    }
+  .preview {
+    display: flex;
+    justify-content: space-between;
   }
 }
